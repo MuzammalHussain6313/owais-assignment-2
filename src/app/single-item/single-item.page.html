@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="list"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Todo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="/assets/20190502_090151.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-subtitle>Get Started to {{todo.name}}</ion-card-subtitle>
+      <ion-card-title>Welcome to {{todo.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{todo.detail}} .Check out some of the resources below for next steps.</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Resources</ion-label>
+    </ion-list-header>
+    <ion-item href="https://iiu.edu.pk/">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>More details</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

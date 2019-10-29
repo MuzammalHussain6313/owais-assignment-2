@@ -11,10 +11,14 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
+  { path: 'add-todo',
+    loadChildren: () => import('./add-todo/add-todo.module').then(m => m.AddTodoPageModule)
+  },
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  }
+  },
+  { path: ':single-item', loadChildren: './single-item/single-item.module#SingleItemPageModule' }
 ];
 
 @NgModule({

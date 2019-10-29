@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>add-Todo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid class="ion-padding-top">
+    <div>
+      <ion-item>
+        <ion-label position="floating">Todo Name</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Details</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-grid class="ion-padding-top">
+        <ion-row class="ion-justify-content-center">
+          <ion-button (click)="addTodo()" shape="square">Save</ion-button>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-grid>
+
+</ion-content>
